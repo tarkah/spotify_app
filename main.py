@@ -108,7 +108,7 @@ class SpotipyApp():
             results = self.sp.current_user_top_tracks(
                 limit=limit, time_range=time_range)
 
-            playlist_name = '\n{} Top {}:'.format(name, limit)
+            playlist_name = '{} - Top {}'.format(name, limit)
             playlist_description = timeframe.value[3] + '  Created over API.'
 
             top_tracks_text = ''
@@ -159,7 +159,7 @@ class SpotipyApp():
         message = title + '\nThe following playlists were created!'
 
         for playlist in playlists:
-            message = message + playlist.name + playlist.track_list_text
+            message = message + '\n' + playlist.name + playlist.track_list_text
 
         message = message.replace('\n', '<br>')
         message = message.replace('\t', '&nbsp;&nbsp;&nbsp;&nbsp;')
