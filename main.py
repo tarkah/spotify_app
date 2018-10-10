@@ -10,9 +10,9 @@ from flask import Flask, request, redirect, g, render_template, url_for, session
 from flask_session import Session
 
 # Playlist counts
-LIMIT_SHORT = 20
-LIMIT_MEDIUM = 50
-LIMIT_LONG = 100
+LIMIT_SHORT = 10
+LIMIT_MEDIUM = 25
+LIMIT_LONG = 50
 
 # Spotify API variables
 CLIENT_ID = os.getenv('SPOTIPY_CLIENT_ID', None)
