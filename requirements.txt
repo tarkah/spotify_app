@@ -12,4 +12,4 @@ requests==2.18.4
 six==1.11.0
 -e git://github.com/plamere/spotipy.git@4c2c1d763a3653aa225c4af848409ec31286a6bf#egg=spotipy
 urllib3==1.22
-Werkzeug==0.12.2
+Werkzeug==0.15.3
